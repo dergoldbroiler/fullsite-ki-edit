@@ -49,12 +49,12 @@ function App() {
           </div>
         </div>
         <aside className="hero-art" aria-hidden="true">
-          <span>Stand prüfen, dann als Pull Request sichern.</span>
+          <span>ssss</span>
         </aside>
       </section>
 
       <section className="headline" id="headline">
-        <h2>Wenige Bausteine, vollständige Seite</h2>
+        <h2>Mehr Bausteine</h2>
         <p>
           Die Seite bleibt bewusst schlank: ein Einstieg, eine Aussage, ein
           Inhaltsblock und Antworten. Das reicht, um Layout, Text und Git-Stände

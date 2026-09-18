@@ -1,26 +1,28 @@
 # Full Site Edit Website
 
-Einfache React-Landingpage (Vite) mit Hero, Headline, Bild-Text, FAQ-Accordion und Footer.
+Schlanke React-Landingpage (Vite): Hero, Headline, Bild-Text, FAQ, Footer.
 
-## Lokal testen
+**Für Marketing und Abstimmung:** [docs/fuer-marketing.md](docs/fuer-marketing.md)  
+Dort steht der Ablauf Entwurf → Testlink → Freigabe → Live in Alltagssprache.
+
+## Kurz: Test vs. Live
+
+- Jeder **Feature-Branch** und jeder **Pull Request** bekommt bei Vercel einen **Testlink**.
+- **Live** wird nur, was nach **`main`** gemergt wird.
+
+## Lokal ansehen
 
 ```bash
 npm install
 npm run dev
 ```
 
-Die Seite läuft unter [http://localhost:5173](http://localhost:5173). Im Cursor App-in-Browser dieselbe Adresse öffnen.
+[http://localhost:5173](http://localhost:5173)
 
-## Älteren Commit im Browser ansehen
-
-Aktuellen Stand weiter auf Port 5173 lassen, zusätzlich:
+Älteren gespeicherten Stand parallel:
 
 ```bash
 npm run preview:commit -- <commit-hash>
 ```
 
-Der gewählte Stand startet auf [http://localhost:5174](http://localhost:5174) (Git-Worktree unter `.preview/`).
-
-## Änderungen ins Repo
-
-Bestätigte Änderungen kommen als Pull Request auf einen Feature-Branch, nicht direkt auf `main`.
+Dann [http://localhost:5174](http://localhost:5174).
