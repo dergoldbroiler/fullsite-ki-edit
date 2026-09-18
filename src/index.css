@@ -1,0 +1,50 @@
+:root {
+  --ink: #1c1914;
+  --muted: #5c564c;
+  --paper: #f6f1e8;
+  --card: #fffdf8;
+  --line: #e2d8c8;
+  --accent: #2f5d50;
+  --accent-hover: #24483e;
+  --gold: #c4a35a;
+  --sans: 'Segoe UI', system-ui, sans-serif;
+  --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, serif;
+
+  font: 18px/1.55 var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+.wrap {
+  width: min(1080px, calc(100% - 2.5rem));
+  margin-inline: auto;
+}
