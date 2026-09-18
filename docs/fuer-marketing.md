@@ -99,3 +99,21 @@ Eine Mail oder ein Chat mit:
 - Kurzer Satz, was sich ändert (z. B. Headline, Hero-Text)
 
 Antwortet mit **Freigabe**, **Änderung X** oder **nicht live nehmen**. Erst danach wird gemergt.
+
+## Anschluss GitHub + Vercel (einmalig)
+
+Damit Testlinks automatisch entstehen:
+
+1. Dieses Projekt als GitHub-Repository anlegen und `main` plus Feature-Branches hochladen.
+2. Auf [vercel.com/new](https://vercel.com/new) das Repository importieren.
+3. In den Vercel-Projekt-Einstellungen: **Production Branch = `main`**. Alle anderen Branches bleiben Previews.
+
+Danach gilt dauerhaft:
+
+- Push auf einen Feature-Branch oder Öffnen eines Pull Requests → **Testlink**
+- Merge nach `main` → **Live**
+
+Aktueller Git-Stand in diesem Repo:
+
+- **`main`** — erster Seitenstand (Ausgang für Live, sobald verbunden)
+- **`cursor/react-landing-page`** — aktueller Entwurf inkl. Textänderungen und dieser Doku (für den ersten Testlink / Pull Request)
