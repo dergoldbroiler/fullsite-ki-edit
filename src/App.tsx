@@ -33,7 +33,13 @@ function App() {
       <section className="hero" aria-labelledby="hero-title">
         <div>
           <p className="eyebrow">Einfache React-Landingpage</p>
-          <h1 id="hero-title">Eine klare Seite. Jeder Stand zum Anschauen.</h1>
+          <h1 id="hero-title">
+            Neuer Text
+            <br />
+            Neue Headline
+            <br />
+            Das passt
+          </h1>
           <p>
             Hero, Headline, Bild-Text und FAQ — klein gehalten, lokal testbar
             und so versioniert, dass ältere Commits im Browser vergleichbar
