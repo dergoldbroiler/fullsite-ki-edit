@@ -1,18 +1,25 @@
 :root {
-  --ink: #1c1914;
-  --muted: #5c564c;
-  --paper: #f6f1e8;
-  --card: #fffdf8;
-  --line: #e2d8c8;
-  --accent: #2f5d50;
-  --accent-hover: #24483e;
-  --gold: #c4a35a;
-  --sans: 'Segoe UI', system-ui, sans-serif;
-  --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, serif;
+  --surface-primary-base: #023e84;
+  --surface-primary-bold: #011e42;
+  --surface-primary-mid: #0554b1;
+  --surface-primary-soft: #f2f5f9;
+  --surface-primary-inversed: #ffffff;
+  --surface-secondary-base: #ffe620;
+  --on-surface-text-primary: #023e84;
+  --on-surface-text-inversed: #ffffff;
+  --on-surface-text-muted: #4d6f9c;
+  --on-surface-border-primary: #023e84;
+  --radius-round: 1000px;
+  --radius-card: 32px;
+  --font: 'Geologica', system-ui, sans-serif;
+  --label-size: 16px;
+  --label-leading: 24px;
+  --space-s: 12px;
+  --space-m: 16px;
 
-  font: 18px/1.55 var(--sans);
-  color: var(--ink);
-  background: var(--paper);
+  font: 16px/1.5 var(--font);
+  color: var(--on-surface-text-primary);
+  background: var(--surface-primary-soft);
   color-scheme: light;
   font-synthesis: none;
   text-rendering: optimizeLegibility;

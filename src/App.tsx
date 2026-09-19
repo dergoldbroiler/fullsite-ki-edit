@@ -49,13 +49,13 @@ function App() {
             <a className="btn btn-primary" href="#faq">
               FAQ öffnen
             </a>
-            <a className="btn btn-ghost" href="#bild-text">
+            <a className="btn btn-secondary" href="#bild-text">
               Zum Inhalt
             </a>
           </div>
         </div>
         <aside className="hero-art" aria-hidden="true">
-          <span>ssss</span>
+          <span>:buhl</span>
         </aside>
       </section>
 
