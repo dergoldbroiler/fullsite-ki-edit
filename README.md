@@ -5,6 +5,8 @@ Schlanke React-Landingpage (Vite): Hero, Headline, Bild-Text, FAQ, Footer.
 **Für Marketing und Abstimmung:** [docs/fuer-marketing.md](docs/fuer-marketing.md)  
 Dort steht der Ablauf Entwurf → Testlink → Freigabe → Live in Alltagssprache.
 
+**Designgrundlage:** [docs/design/](docs/design/README.md) — Tokens, Seitenaufbau und Figma-Links. Neue Kontexte als Markdown dort ablegen.
+
 ## Kurz: Test vs. Live
 
 - Jeder **Feature-Branch** und jeder **Pull Request** bekommt bei Vercel einen **Testlink**.

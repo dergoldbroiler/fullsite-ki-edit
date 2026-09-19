@@ -33,7 +33,13 @@ function App() {
       <section className="hero" aria-labelledby="hero-title">
         <div>
           <p className="eyebrow">Einfache React-Landingpage</p>
-          <h1 id="hero-title">Eine klare Seite. Jeder Stand zum Anschauen.</h1>
+          <h1 id="hero-title">
+            Neuer Text
+            <br />
+            Neue Headline
+            <br />
+            Das passt
+          </h1>
           <p>
             Hero, Headline, Bild-Text und FAQ — klein gehalten, lokal testbar
             und so versioniert, dass ältere Commits im Browser vergleichbar
@@ -43,13 +49,13 @@ function App() {
             <a className="btn btn-primary" href="#faq">
               FAQ öffnen
             </a>
-            <a className="btn btn-ghost" href="#bild-text">
+            <a className="btn btn-secondary" href="#bild-text">
               Zum Inhalt
             </a>
           </div>
         </div>
         <aside className="hero-art" aria-hidden="true">
-          <span>ssss</span>
+          <span>:buhl</span>
         </aside>
       </section>
 

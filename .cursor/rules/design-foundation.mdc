@@ -1,0 +1,14 @@
+---
+description: Figma und docs/design sind die Designquelle für das gesamte Projekt
+alwaysApply: true
+---
+
+# Designgrundlage
+
+Vor UI- oder Layout-Änderungen `docs/design/` lesen (README, tokens, figma, pages) und weitere Markdown-Dateien dort.
+
+- **Figma** ist die visuelle Quelle. Die Datei steht in `docs/design/figma.md` (Buhl Marketing Component Library, Key `BrC2fDJrIaaWD2nBP9pmdR`). Frames über das Figma-Plugin lesen, nicht aus dem Gedächtnis nachbauen. Andere Figma-Libraries ignorieren.
+- **Markdown in `docs/design/`** hält Tokens, Seitenstruktur und Regeln fest. Neue Kontexte dort als `.md` ergänzen, nicht nur im Chat.
+- Weicht Figma von Tokens ab: Figma umsetzen, danach `tokens.md` aktualisieren.
+- Keine neuen Farben, Schriften oder Abstände erfinden, wenn Tokens oder Figma sie schon setzen.
+- Marketing-Ablauf bleibt in `docs/fuer-marketing.md`; Design-Entscheidungen gehören nach `docs/design/`.
