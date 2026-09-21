@@ -1,0 +1,32 @@
+.faq-list {
+  width: 100%;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgb(2 62 132 / 0.16);
+}
+
+.faq-item button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  padding: 1.1rem 0;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--on-surface-text-primary);
+}
+
+.faq-item button:hover,
+.faq-item button:focus-visible {
+  color: var(--surface-primary-mid);
+}
+
+.faq-item p {
+  margin: 0 0 1.1rem;
+  color: var(--on-surface-text-muted);
+}

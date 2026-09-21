@@ -3,5 +3,8 @@
   "framework": "vite",
   "git": {
     "deploymentEnabled": true
-  }
+  },
+  "rewrites": [
+    { "source": "/design", "destination": "/index.html" }
+  ]
 }

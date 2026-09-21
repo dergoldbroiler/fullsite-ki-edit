@@ -1,22 +1,14 @@
 ---
 name: figma-design-foundation
-description: Implementiert UI nach Figma und docs/design. Nutzen bei Layout, Styling, Komponenten, Design-Tokens oder wenn Figma-Dateien bzw. Design-Kontext ergänzt werden.
+description: UI nach lokalem Designsystem, sonst Figma. Nutzen bei Layout, Komponenten, Tokens oder /design-Vorschau.
 ---
 
-# Figma und Markdown als Quelle
+# Lokal zuerst
 
-## Lesen
+1. `src/components/Button.tsx`, `FaqList.tsx`, Tokens in `src/index.css`
+2. Vorschau ` /design ` (gleiche Vite-App, kein extra Tool)
+3. `docs/design/tokens.md`
 
-1. `docs/design/README.md`, `tokens.md`, `pages.md`, `figma.md`
-2. Weitere `docs/design/*.md`
-3. Figma: Datei `BrC2fDJrIaaWD2nBP9pmdR` (Buhl Marketing Component Library). `get_metadata` / `get_design_context` auf der passenden Seiten-Node-ID aus `docs/design/figma.md`. Nur diese Library, nicht steuer BIB / Finanzen / MV.
+Figma (`BrC2fDJrIaaWD2nBP9pmdR`) nur für **neue** Nodes. Danach Komponente + `/design`-Abschnitt + `tokens.md` nachziehen.
 
-## Umsetzen
-
-- Spacing, Typo, Farbe, Radius, Breakpoints aus Figma bzw. Tokens
-- Keine Parallel-Palette im CSS
-- Nach abweichendem Figma: `docs/design/tokens.md` und bei neuen Screens `pages.md` mitziehen
-
-## Neue Figma-Datei
-
-Zeile in `docs/design/figma.md` (Name, URL, Frames, Geltungsbereich). Ohne URL nicht raten.
+Keine zweite Farbpalette. Kein Storybook, solange `/design` reicht.

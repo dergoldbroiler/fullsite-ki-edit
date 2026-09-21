@@ -1,14 +1,14 @@
 ---
-description: Figma und docs/design sind die Designquelle für das gesamte Projekt
+description: Kodiertes Designsystem zuerst; Figma nur für neue Komponenten
 alwaysApply: true
 ---
 
 # Designgrundlage
 
-Vor UI- oder Layout-Änderungen `docs/design/` lesen (README, tokens, figma, pages) und weitere Markdown-Dateien dort.
+Arbeitsreihenfolge bei UI:
 
-- **Figma** ist die visuelle Quelle. Die Datei steht in `docs/design/figma.md` (Buhl Marketing Component Library, Key `BrC2fDJrIaaWD2nBP9pmdR`). Frames über das Figma-Plugin lesen, nicht aus dem Gedächtnis nachbauen. Andere Figma-Libraries ignorieren.
-- **Markdown in `docs/design/`** hält Tokens, Seitenstruktur und Regeln fest. Neue Kontexte dort als `.md` ergänzen, nicht nur im Chat.
-- Weicht Figma von Tokens ab: Figma umsetzen, danach `tokens.md` aktualisieren.
-- Keine neuen Farben, Schriften oder Abstände erfinden, wenn Tokens oder Figma sie schon setzen.
-- Marketing-Ablauf bleibt in `docs/fuer-marketing.md`; Design-Entscheidungen gehören nach `docs/design/`.
+1. `src/components/` und `http://localhost:5173/design` — vorhandene Tokens/Komponenten wiederverwenden.
+2. `docs/design/tokens.md` — Werte nicht neu erfinden.
+3. Figma (`docs/design/figma.md`, Key `BrC2fDJrIaaWD2nBP9pmdR`) **nur**, wenn die Komponente oder Variante im Code noch fehlt.
+
+Keine komplette Library-Traversal und kein `get_design_context` für Buttons/FAQ, die schon kodiert sind. Andere Figma-Libraries ignorieren. Marketing-Ablauf: `docs/fuer-marketing.md`.

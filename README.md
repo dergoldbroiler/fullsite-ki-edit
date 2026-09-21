@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-[http://localhost:5173](http://localhost:5173)
+[http://localhost:5173](http://localhost:5173) · Designsystem: [http://localhost:5173/design](http://localhost:5173/design)
 
 Älteren gespeicherten Stand parallel:
 

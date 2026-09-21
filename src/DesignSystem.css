@@ -1,0 +1,105 @@
+.ds {
+  padding-bottom: 4rem;
+}
+
+.ds-header {
+  padding: 2.5rem 0 1rem;
+}
+
+.ds-kicker {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--surface-primary-mid);
+}
+
+.ds h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  letter-spacing: -0.03em;
+}
+
+.ds-header p {
+  max-width: 36rem;
+  color: var(--on-surface-text-muted);
+}
+
+.ds-header code {
+  font-size: 0.9em;
+}
+
+.ds-section {
+  padding: 2rem 0;
+  border-top: 1px solid rgb(2 62 132 / 0.16);
+}
+
+.ds-section h2 {
+  margin: 0 0 1.25rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.ds-swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.ds-swatch {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.ds-chip {
+  display: block;
+  height: 64px;
+  border-radius: 12px;
+  border: 1px solid rgb(2 62 132 / 0.16);
+}
+
+.ds-swatch code {
+  font-size: 0.7rem;
+  color: var(--on-surface-text-muted);
+}
+
+.ds-heading-xl {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.ds-body {
+  margin: 0 0 0.5rem;
+  color: var(--on-surface-text-muted);
+}
+
+.ds-label {
+  margin: 0;
+  font-size: var(--label-size);
+  line-height: var(--label-leading);
+}
+
+.ds-row,
+.ds-inverse {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.ds-inverse {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  border-radius: var(--radius-card);
+  background: linear-gradient(
+    180deg,
+    var(--surface-primary-mid),
+    var(--surface-primary-base)
+  );
+}
+
+.ds-yellow .btn-secondary {
+  background: var(--surface-secondary-base);
+  border-color: transparent;
+}

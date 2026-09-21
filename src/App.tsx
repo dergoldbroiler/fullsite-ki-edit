@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { Button } from './components/Button'
+import { FaqList } from './components/FaqList'
 import './App.css'
 
 const faqs = [
@@ -17,8 +18,6 @@ const faqs = [
 ]
 
 function App() {
-  const [open, setOpen] = useState<number | null>(0)
-
   return (
     <div className="wrap">
       <header className="site-header">
@@ -27,6 +26,7 @@ function App() {
           <a href="#headline">Ansatz</a>
           <a href="#bild-text">Inhalt</a>
           <a href="#faq">FAQ</a>
+          <a href="/design">Designsystem</a>
         </nav>
       </header>
 
@@ -46,12 +46,10 @@ function App() {
             bleiben.
           </p>
           <div className="hero-actions">
-            <a className="btn btn-primary" href="#faq">
-              FAQ öffnen
-            </a>
-            <a className="btn btn-secondary" href="#bild-text">
+            <Button href="#faq">FAQ öffnen</Button>
+            <Button variant="secondary" href="#bild-text">
               Zum Inhalt
-            </a>
+            </Button>
           </div>
         </div>
         <aside className="hero-art" aria-hidden="true">
@@ -82,30 +80,12 @@ function App() {
 
       <section className="faq" id="faq">
         <h2>Häufige Fragen</h2>
-        {faqs.map((item, index) => {
-          const isOpen = open === index
-          return (
-            <div className="faq-item" key={item.q}>
-              <button
-                type="button"
-                aria-expanded={isOpen}
-                aria-controls={`faq-panel-${index}`}
-                onClick={() => setOpen(isOpen ? null : index)}
-              >
-                <span>{item.q}</span>
-                <span aria-hidden="true">{isOpen ? '–' : '+'}</span>
-              </button>
-              {isOpen ? (
-                <p id={`faq-panel-${index}`}>{item.a}</p>
-              ) : null}
-            </div>
-          )
-        })}
+        <FaqList items={faqs} />
       </section>
 
       <footer className="site-footer">
         <span>Full Site Edit</span>
-        <span>Lokal testen · Stände vergleichen · per PR mergen</span>
+        <a href="/design">Designsystem</a>
       </footer>
     </div>
   )
