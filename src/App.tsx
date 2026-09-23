@@ -1,91 +1,89 @@
 import { Button } from './components/Button'
 import { FaqList } from './components/FaqList'
+import { Editable } from './preview/Editable'
+import site from './site.json'
 import './App.css'
 
-const faqs = [
-  {
-    q: 'Kann ich die Seite lokal im Browser testen?',
-    a: 'Ja. Mit npm run dev läuft die Seite auf http://localhost:5173 und lässt sich im App-in-Browser öffnen.',
-  },
-  {
-    q: 'Wie schaue ich einen älteren Stand an?',
-    a: 'Mit npm run preview:commit -- <commit> startet eine zweite Vorschau auf Port 5174. So bleibt der aktuelle Stand parallel sichtbar.',
-  },
-  {
-    q: 'Wie kommen Änderungen ins Repo?',
-    a: 'Bestätigte Änderungen gehen als Pull Request auf einen Feature-Branch, nicht direkt auf main.',
-  },
-]
-
 function App() {
+  const { copy, faqs } = site
+
   return (
     <div className="wrap">
       <header className="site-header">
-        <div className="logo">Full Site Edit</div>
+        <Editable path="copy.logo" text={copy.logo} as="div" className="logo" />
         <nav className="nav" aria-label="Hauptnavigation">
-          <a href="#headline">Ansatz</a>
-          <a href="#bild-text">Inhalt</a>
-          <a href="#faq">FAQ</a>
-          <a href="/design">Designsystem</a>
+          <a href="#headline">{copy.navApproach}</a>
+          <a href="#bild-text">{copy.navContent}</a>
+          <a href="#faq">{copy.navFaq}</a>
+          <a href="/design">{copy.navDesign}</a>
         </nav>
       </header>
 
       <section className="hero" aria-labelledby="hero-title">
         <div>
-          <p className="eyebrow">Einfache React-Landingpage</p>
-          <h1 id="hero-title">
-            Neuer Text
-            <br />
-            Neue Headline
-            <br />
-            Das passt
-          </h1>
-          <p>
-            Hero, Headline, Bild-Text und FAQ — klein gehalten, lokal testbar
-            und so versioniert, dass ältere Commits im Browser vergleichbar
-            bleiben.
-          </p>
+          <Editable
+            path="copy.eyebrow"
+            text={copy.eyebrow}
+            as="p"
+            className="eyebrow"
+          />
+          <Editable
+            path="copy.heroTitle"
+            text={copy.heroTitle}
+            as="h1"
+            id="hero-title"
+          />
+          <Editable
+            path="copy.heroLead"
+            text={copy.heroLead}
+            as="p"
+            multiline
+          />
           <div className="hero-actions">
-            <Button href="#faq">FAQ öffnen</Button>
+            <Button href="#faq">
+              <Editable path="copy.ctaFaq" text={copy.ctaFaq} as="span" />
+            </Button>
             <Button variant="secondary" href="#bild-text">
-              Zum Inhalt
+              <Editable path="copy.ctaContent" text={copy.ctaContent} as="span" />
             </Button>
           </div>
         </div>
         <aside className="hero-art" aria-hidden="true">
-          <span>:buhl</span>
+          <Editable path="copy.heroArt" text={copy.heroArt} as="span" />
         </aside>
       </section>
 
       <section className="headline" id="headline">
-        <h2>Mehr Bausteine</h2>
-        <p>
-          Die Seite bleibt bewusst schlank: ein Einstieg, eine Aussage, ein
-          Inhaltsblock und Antworten. Das reicht, um Layout, Text und Git-Stände
-          im Browser zu beurteilen.
-        </p>
+        <Editable path="copy.headlineTitle" text={copy.headlineTitle} as="h2" />
+        <Editable
+          path="copy.headlineBody"
+          text={copy.headlineBody}
+          as="p"
+          multiline
+        />
       </section>
 
       <section className="image-text" id="bild-text">
         <img src="/studio.svg" alt="Abstrakte Illustration eines Arbeitsplatzes mit Monitor und Skizzen" />
         <div className="image-text-copy">
-          <h3>Bild und Text nebeneinander</h3>
-          <p>
-            Dieser Block zeigt, wie Bild und Copy zusammenwirken. Spätere
-            Varianten — andere Texte, andere Bilder — können als eigener Commit
-            im App-in-Browser gegen den aktuellen Stand gehalten werden.
-          </p>
+          <Editable path="copy.imageTitle" text={copy.imageTitle} as="h3" />
+          <Editable
+            path="copy.imageBody"
+            text={copy.imageBody}
+            as="p"
+            multiline
+          />
         </div>
       </section>
 
       <section className="faq" id="faq">
-        <h2>Häufige Fragen</h2>
+        <Editable path="copy.faqTitle" text={copy.faqTitle} as="h2" />
         <FaqList items={faqs} />
       </section>
 
       <footer className="site-footer">
-        <span>Full Site Edit</span>
-        <a href="/design">Designsystem</a>
+        <Editable path="copy.footerBrand" text={copy.footerBrand} as="span" />
+        <a href="/design">{copy.footerDesign}</a>
       </footer>
     </div>
   )

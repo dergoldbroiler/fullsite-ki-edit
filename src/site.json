@@ -1,0 +1,48 @@
+{
+  "tokens": {
+    "--surface-primary-base": "#023e84",
+    "--surface-primary-bold": "#011e42",
+    "--surface-primary-mid": "#0554b1",
+    "--surface-primary-soft": "#f2f5f9",
+    "--surface-primary-inversed": "#ffffff",
+    "--surface-secondary-base": "#ffe620",
+    "--on-surface-text-primary": "#023e84",
+    "--on-surface-text-inversed": "#ffffff",
+    "--on-surface-text-muted": "#4d6f9c",
+    "--on-surface-border-primary": "#023e84"
+  },
+  "copy": {
+    "logo": "Full Site Edit",
+    "navApproach": "Ansatz",
+    "navContent": "Inhalt",
+    "navFaq": "FAQ",
+    "navDesign": "Designsystem",
+    "eyebrow": "Einfache React-Landingpage",
+    "heroTitle": "testline okay",
+    "heroLead": "Hero, Headline, Bild-Text und FAQ — klein gehalten, lokal testbar und so versioniert, dass ältere Commits im Browser vergleichbar bleiben.",
+    "ctaFaq": "FAQ öffnen",
+    "ctaContent": "Zum Inhalt",
+    "heroArt": ":buhl",
+    "headlineTitle": "test text",
+    "headlineBody": "sss das is mei",
+    "imageTitle": "Bild und Text nebeneinander",
+    "imageBody": "Dieser Block zeigt, wie Bild und Copy zusammenwirken. Spätere Varianten — andere Texte, andere Bilder — können als eigener Commit im App-in-Browser gegen den aktuellen Stand gehalten werden.",
+    "faqTitle": "Häufige Fragen",
+    "footerBrand": "Full Site Edit",
+    "footerDesign": "Designsystem"
+  },
+  "faqs": [
+    {
+      "q": "Kann ich die Seite lokal im Browser testen?",
+      "a": "Ja. Mit npm run dev läuft die Seite auf http://localhost:5173 und lässt sich im App-in-Browser öffnen."
+    },
+    {
+      "q": "Wie schaue ich einen älteren Stand an?",
+      "a": "Mit npm run preview:commit -- <commit> startet eine zweite Vorschau auf Port 5174. So bleibt der aktuelle Stand parallel sichtbar."
+    },
+    {
+      "q": "Wie kommen Änderungen ins Repo?",
+      "a": "Bestätigte Änderungen gehen als Pull Request auf einen Feature-Branch, nicht direkt auf main."
+    }
+  ]
+}

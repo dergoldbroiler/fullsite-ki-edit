@@ -1,0 +1,57 @@
+.preview-bar {
+  position: fixed;
+  z-index: 40;
+  right: 1rem;
+  bottom: 1rem;
+  display: grid;
+  gap: 0.75rem;
+  max-width: min(28rem, calc(100% - 2rem));
+  padding: 0.85rem 1rem;
+  border-radius: 16px;
+  background: #011e42;
+  color: #fff;
+  font-size: 0.85rem;
+  box-shadow: 0 12px 32px rgb(1 30 66 / 0.28);
+}
+
+.preview-bar-toggle {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.preview-bar-tokens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 0.9rem;
+}
+
+.preview-bar-tokens label {
+  display: grid;
+  gap: 0.2rem;
+  font-size: 0.7rem;
+}
+
+.preview-bar-tokens input {
+  width: 2.25rem;
+  height: 1.5rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.preview-bar-status {
+  opacity: 0.8;
+}
+
+.preview-editable {
+  outline: 1px dashed rgb(2 62 132 / 0.45);
+  outline-offset: 4px;
+  cursor: text;
+}
+
+.preview-editable:focus {
+  outline-color: #0554b1;
+}

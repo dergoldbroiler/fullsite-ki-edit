@@ -8,7 +8,8 @@ alwaysApply: true
 Arbeitsreihenfolge bei UI:
 
 1. `src/components/` und `http://localhost:5173/design` — vorhandene Tokens/Komponenten wiederverwenden.
-2. `docs/design/tokens.md` — Werte nicht neu erfinden.
+2. Texte und Farben in der laufenden Vorschau: Schalter **Textanpassungen** → in `src/site.json` speichern (nur `npm run dev`).
+3. `docs/design/tokens.md` — Werte nicht neu erfinden, nach Farb-Edits angleichen.
 3. Figma (`docs/design/figma.md`, Key `BrC2fDJrIaaWD2nBP9pmdR`) **nur**, wenn die Komponente oder Variante im Code noch fehlt.
 
 Keine komplette Library-Traversal und kein `get_design_context` für Buttons/FAQ, die schon kodiert sind. Andere Figma-Libraries ignorieren. Marketing-Ablauf: `docs/fuer-marketing.md`.
