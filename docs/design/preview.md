@@ -2,7 +2,9 @@
 
 Kodierte Buhl-Bausteine unter [http://localhost:5173/design](http://localhost:5173/design).
 
-Texte und Markenfarben der Landingpage: unten rechts **Textanpassungen** einschalten, klicken, tippen, Fokus verlassen. Vite schreibt nach `src/site.json` (HMR). Dafür den Dev-Server neu starten, falls der Speichern-Endpunkt fehlt.
+Texte und Markenfarben der Landingpage: unten rechts **Textanpassungen** einschalten, klicken, tippen, Fokus verlassen. Vite schreibt nach `src/site.json` (HMR).
+
+**Stand:** Dropdown wechselt zwischen der Arbeitskopie und den letzten Git-Commits (Inhalt aus `src/site.json` jenes Commits). Textanpassungen nur im aktuellen Stand. Layout-Code bleibt der laufende Branch — für Pixel-Vergleich ganzer Builds weiter `npm run preview:commit`.
 
 Produktion blendet die Leiste aus. Commit von `site.json` wie jede andere Änderung.
 

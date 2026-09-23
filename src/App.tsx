@@ -1,11 +1,11 @@
 import { Button } from './components/Button'
 import { FaqList } from './components/FaqList'
 import { Editable } from './preview/Editable'
-import site from './site.json'
+import { useSite } from './preview/siteContext'
 import './App.css'
 
 function App() {
-  const { copy, faqs } = site
+  const { copy, faqs } = useSite().data
 
   return (
     <div className="wrap">
